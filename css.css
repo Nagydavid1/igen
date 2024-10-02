@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background: #555;
+}
+
+.fejlec {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.fejlec h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+
+.mozgatas {
+    position: relative;
+    width: 100vw; 
+    height: 300px; 
+    overflow: hidden;
+}
+
+.oldalak {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation: fade 12s infinite;
+    object-fit: cover; 
+    object-position: center; 
+}
+
+
+.oldalak:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.oldalak:nth-child(2) {
+    animation-delay: 4s;
+}
+
+.oldalak:nth-child(3) {
+    animation-delay: 8s;
+}
+
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    33.33% {
+        opacity: 1;
+    }
+    53.33% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.tartalom {
+    display: flex;
+    width: 100%;
+}
+
+.bal, .jobb {
+    width: 20%;
+    padding: 1rem;
+    background: #fff;
+    margin: 0 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.kozep {
+    width: 60%;
+    padding: 1rem;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.doboz {
+    margin-bottom: 2rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #333;
+    color: #fff;
+}
+.vonal{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    border: 2px dashed #000000;
+    color: #FFFFFF;
+    font-size: 6px;
+}
+.szoveg{
+    text-align: center;
+    
+}

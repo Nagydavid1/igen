@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hotel Szeleta</title>
+    <link rel="stylesheet" href="foglalas.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Főoldal</a></li>
+                <li><a href="rolunk.html">Rólunk</a></li>
+                <li><a href="szolgaltatasok.html">Szolgáltatások</a></li>
+                <li><a href="latnivalok.html">Látnivalók</a></li>
+                <li><a href="galeria.html">Galéria</a></li>
+                <li><a href="arak.html">Árak</a></li>
+                <li><a href="foglalas.html">Ajánlat/Foglalás</a></li>
+                <li><a href="terkep.html">Eljutás</a></li>
+            </ul>
+        </nav>
+        <div class="fejlec">
+            <h1>Hotel Szeleta</h1>
+            <div class="mozgatas">
+                <img class="oldalak" src="kepek/kep2.png">
+                <img class="oldalak" src="kepek/kep3.jfif">
+                <img class="oldalak" src="kepek/kep4.jpg">
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="tartalom">
+            <article class="kozep">
+                <form>
+                    <h1>Ajánlat/Foglalás</h1>
+                    
+                    <label for="erkezes">Érkezés napja:</label>
+                    <input type="date" id="erkezes" name="erkezes"><br><br>
+                    
+                    <label for="tavozas">Távozás (elutazás) napja:</label>
+                    <input type="date" id="tavozas" name="tavozas"><br><br>
+                    
+                    <label for="cim">Cím:</label>
+                    <input type="text" id="cim" name="cim"><br><br>
+                    
+                    <label for="email">E-mail cím:</label>
+                    <input type="email" id="email" name="email"><br><br>
+                    
+                    <label for="telefon">Telefonszám:</label>
+                    <input type="tel" id="telefon" name="telefon"><br><br>
+                    
+                    <label for="szoba">Szobatípus:</label>
+                    <select id="szoba" name="szoba">
+                        <option value="single">Egyágyas</option>
+                        <option value="double">Kétágyas</option>
+                        <option value="suite">Lakosztály</option>
+                    </select><br><br>
+                    
+                    <label for="agy">További személyek elhelyezése:</label>
+                    <input type="checkbox" id="agy" name="agy" value="agy"> Pótágy<br><br>
+                    
+                    <label for="fizetes">Fizetési mód:</label>
+                    <select id="fizetes" name="fizetes">
+                        <option value="penz">Készpénz</option>
+                        <option value="kartya">Bankkártya</option>
+                        <option value="otp-szep">OTP SZÉP kártya</option>
+                        <option value="mkb-szep">MKB SZÉP kártya</option>
+                        <option value="kandh-szep">K&H SZÉP kártya</option>
+                    </select><br><br>
+                    
+                    <label for="megjegyzes">Megjegyzés:</label>
+                    <textarea id="megjegyzes" name="megjegyzes"></textarea><br><br>
+                    
+                    <input type="submit" value="Küldés">
+                </form>
+            </article>
+
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Hotel Szeleta. Minden jog fenntartva.</p>
+    </footer>
+</body>
+</html>
